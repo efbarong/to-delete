@@ -1,0 +1,13 @@
+name: Configure repository
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: write
+
+jobs:
+  use-configure-repo:
+    uses: efbarong/.github/.github/workflows/configure-repo.yml@master
+    secrets: inherit
